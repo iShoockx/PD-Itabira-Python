@@ -1,0 +1,9 @@
+﻿1.2 - Algoritmos
+
+
+Solução Dissertativa: 
+Leia e armazene o valor que será multiplicado ao nove na variável N
+Aplique a seguinte operação para o Dígito da Dezena  N-1 e armazene em D
+Aplique a seguinte operação para o Dígito da unidade 10-N e armazene em U 
+Aplique a operaçao de soma D+U e armazene em R 
+Apresente R

@@ -1,0 +1,11 @@
+﻿1.2 - Algoritmos
+Pseudocódigo
+
+
+1- Inicio
+2- Leia N 
+3- D=1-N
+4- U=10-N
+5- R=D+U
+6- Imprima R
+7- Fim
