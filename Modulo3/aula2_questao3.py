@@ -1,0 +1,5 @@
+j=int(input("Digite sua idade:  "))
+a=bool(input("Voce ja jogou mais de 3 jogos de tabuleiro: "))
+v=int(input("Quantos jogo voce ja ganhou: "))
+b=(16<j<18 and a and v>1)
+print(f"Apto para ingressar no clube de jogos de tabuleiro: {b}")
