@@ -1,0 +1,1 @@
+['<built-in', 'method', 'read', 'of', '_io.TextIOWrapper', 'object', 'at', '0x000001D8F6D69B60>']
