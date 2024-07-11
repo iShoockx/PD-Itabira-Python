@@ -1,4 +1,4 @@
-with open("estomago.txt", 'r') as arquivo:
+with open("./estomago.txt", 'r',encoding="UTF-8") as arquivo:
       linhas = arquivo.readlines()
 
       # Texto das primeiras 25 linhas

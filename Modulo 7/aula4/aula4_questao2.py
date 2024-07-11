@@ -1,5 +1,5 @@
 import os
-with open ("helloword.txt","r") as f:
+with open ("palavras.txt","r") as f:
     texto = str(f.read)
     print(texto)
     
