@@ -2,15 +2,15 @@ import csv
 # variaveis universais durante o processo
 campos_produtos = ["ID","Produto","Preço"] # Campos para o field names dos produtos
 campos_contas = ['Nome','Senha','Codigo','ID']
-ID_existe = False
-nome_existe = False
-senha_existe = False
-resposta_alteraçao_existe = False
+ID_existe = False # Confirmaçao para continuar o codigo
+nome_existe = False # Confirmaçao para continuar o codigo
+senha_existe = False # Confirmaçao para continuar o codigo
+resposta_alteraçao_existe = False # Confirmaçao para continuar o codigo
 
 
 
 
-def adicionar_csv(ms1,msg2,campos,lista_dicionario,arquivo):
+def adicionar_csv(ms1,msg2,campos,lista_dicionario,arquivo): #Esse função tem como entrada mensagens de input as colunas do csv e a lista de dicionarios do csv além do propio arquivo // Saida ele adiciona as informaçoes dadas ao usuario e manda um mensagem de confirmação ao usuario
     dado1 = input(ms1)
     if dado1 != "0":
         dado2 = input(msg2)
@@ -36,7 +36,7 @@ def adicionar_csv(ms1,msg2,campos,lista_dicionario,arquivo):
             escritor.writerows(dados)   #Inserçao de dados
         print(f"Criado com sucesso")
 
-def removedor_csv(lista_dicionario,campos,arquivo):
+def removedor_csv(lista_dicionario,campos,arquivo): # Essa função tem como entrada  a lista de dicionarios do csv as colunas do csv além do propio arquivo // Saida Remove a linha escolhida e manda uma mensagem de confirmaçao ao usuario
 
     pergunta_de_id = input("Digite o ID do produto: (Digite 0 caso queira cancelar a açao) ")
     #Verificador de id
@@ -53,7 +53,7 @@ def removedor_csv(lista_dicionario,campos,arquivo):
                 escritor.writerows(lista_dicionario) #removendo o campo
             print("Remoção feita com sucesso")
 
-def atualizar_csv(key):
+def atualizar_csv(key): # Essa funçao tem como entrada uma key para saber se a atualizaçao é do usuario ou produto // Saida atualiza o campo escolhido e manda uma mensagem de confirmaçao ao usuario
 
     if key == 0 :
         # Colocando as variaveis que se diferenciam do produto pro usuario
@@ -235,7 +235,7 @@ with open('Trabalho-Pratico\\Contas.csv', newline='', encoding='utf-8') as csvco
             else:
                 print("Erro permissao nao encontrada no sistema")
                     
-                        
+    #Adicionando usuarios (Entretando nao tem a possibilidade de escolher o Codigo de Permissão vem como nativo o 01(Cliente))                    
     elif op == "2":
         adicionar_csv("Digite seu Nome(Digite 0 caso queira cancelar a açao)","Digite sua Senha",campos_contas,leitor_contas_csv,'Trabalho-Pratico\\Contas.csv')
     
